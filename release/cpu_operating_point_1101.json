@@ -1,0 +1,17 @@
+{
+  "default_tau": 0.3,
+  "public_score": 0.41,
+  "submission": "57854255",
+  "CPU_tau026_masks": 1210,
+  "CPU_tau030_masks": 1152,
+  "images": 180,
+  "nonempty_images": 177,
+  "neural_weights_changed": false,
+  "utility_arrays_changed": false,
+  "full_tau030_notebook_complete": true,
+  "full_tau030_notebook_code_cells": 4,
+  "full_tau030_notebook_errors": 0,
+  "full_tau030_notebook_elapsed_seconds": 14201.909757791087,
+  "full_tau030_notebook_CSV_exact": true,
+  "full_tau030_notebook_final_figure_inspected": true
+}

@@ -1,0 +1,30 @@
+{
+ "scale": 1,
+ "flips": 4,
+ "tau": 0.30,
+ "splits": true,
+ "dense": [
+  {
+   "arch": "unet",
+   "encoder": "tu-tf_efficientnetv2_s",
+   "file": "dense_e3_effv2s_n_long_lean_full.safetensors",
+   "in_channels": 1,
+   "classes": 1
+  },
+  {
+   "arch": "unet",
+   "encoder": "tu-tf_efficientnetv2_s",
+   "file": "dense_e3_effv2s_n_long_lean_win_full.safetensors",
+   "in_channels": 1,
+   "classes": 1,
+   "label_dy": 0.24
+  }
+ ],
+ "scorer": "scorer.npz",
+ "instances": [
+  [
+   "instances_inst_maskrcnn_grp_fold0.safetensors",
+   "instances_inst_maskrcnn_union_fold0.safetensors"
+  ]
+ ]
+}

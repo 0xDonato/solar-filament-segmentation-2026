@@ -1,0 +1,2 @@
+{"name": "e3_effv2s_n_long_lean", "spine_w": 0.0, "coords": false, "encoder": "tu-tf_efficientnetv2_s", "scale": 1, "crop": 1024,
+ "batch": 8, "steps": 12000, "lr": 5e-4, "prefetch_threads": 3, "ckpt_every": 1000}

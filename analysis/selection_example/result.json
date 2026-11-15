@@ -1,0 +1,115 @@
+{
+  "stem": "20130530133654Bh",
+  "tau": 0.3,
+  "candidates": 302,
+  "selected": 16,
+  "columns": 53,
+  "scored_CPU_reference_RLE_sets_exact": true,
+  "additive_optimum_check": {
+    "nodes": 302,
+    "chosen": 16,
+    "value": 4.241201145359419,
+    "optimum": 4.241201145359419,
+    "antichain": true,
+    "positive": true,
+    "same_set": false,
+    "subtrees": 25,
+    "subtrees_agree": 25,
+    "optimal": true
+  },
+  "cases": [
+    {
+      "decision": "Keep whole candidate",
+      "node": 263,
+      "chosen": true,
+      "utility": 0.779641193826282,
+      "presence": 0.9633904230907184,
+      "conditional_iou": 0.8092681587232952,
+      "gain": 0.47964119382628206,
+      "best_parts": 0.47467568906906615,
+      "alternative_nodes": [
+        280
+      ],
+      "alternatives": [
+        {
+          "node": 280,
+          "utility": 0.7746756890690661,
+          "gain": 0.47467568906906615
+        }
+      ],
+      "area": 5342,
+      "map_level": 0.6
+    },
+    {
+      "decision": "Keep parts",
+      "node": 2,
+      "chosen": false,
+      "utility": 0.3607086889838967,
+      "presence": 0.607390062302988,
+      "conditional_iou": 0.5938666293225625,
+      "gain": 0.0607086889838967,
+      "best_parts": 0.07268810497443301,
+      "alternative_nodes": [
+        81,
+        267
+      ],
+      "alternatives": [
+        {
+          "node": 81,
+          "utility": 0.33833876945944696,
+          "gain": 0.038338769459446975
+        },
+        {
+          "node": 267,
+          "utility": 0.334349335514986,
+          "gain": 0.034349335514986035
+        }
+      ],
+      "area": 18672,
+      "map_level": 0.05
+    }
+  ],
+  "selected_nodes": [
+    5,
+    81,
+    90,
+    113,
+    116,
+    125,
+    159,
+    163,
+    183,
+    209,
+    243,
+    244,
+    263,
+    267,
+    268,
+    269
+  ],
+  "milp_optimal_nodes": [
+    5,
+    81,
+    90,
+    113,
+    116,
+    125,
+    159,
+    183,
+    207,
+    209,
+    243,
+    244,
+    263,
+    267,
+    268,
+    269
+  ],
+  "selection_rule": "reference image with most masks;lexical image tie-break",
+  "source": "compact four-network CPU reference",
+  "test_labels_read": 0,
+  "new_fits": 0,
+  "new_neural_forwards": null,
+  "new_neural_images": 1,
+  "scope": "Explain one compact CPU prediction with real candidate/selection values.\n\nThe example is the reference image with most selected masks, breaking ties by\nimage identifier. Inference uses one JPEG. An optional complete CPU cache avoids\nneural replay; native output must reproduce the scored reference in either case.\nThis illustrates decisions without supplying test labels or physical validation."
+}

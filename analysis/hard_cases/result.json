@@ -1,0 +1,230 @@
+{
+  "scope": "Describe fixed native OOF errors on four annotation-derived hard-case sets.\n\nUse supplied fixed predictions and official training records. Categories\nare image contrast, annotated spine length, reference skeleton branching and\ndisk position. These are descriptive proxies, not new physical barb/faintness\nlabels. Plot median-quality and failure examples using fixed rules; no training,\ntest images, candidate selection changes or committee-score estimate.",
+  "frames": 707,
+  "annotation_objects": 8199,
+  "technical": false,
+  "native_pq": 0.45755608127795366,
+  "original_native_control_exact": true,
+  "prediction_source": "analysis/hard_cases/predictions_group_tau0.30.csv",
+  "partition": "Group-confined four-network CPU masks at cutoff0.30;four neural blocks and19group-held utility fits",
+  "source_note": "All neural ancestors and utility fits exclude the queried annotation group. Fixed fitted models and reused-data recipes;temporal independence and unknown test styles remain unmeasured. Deployment masks differ.",
+  "reused_annotation_features": "analysis/hard_cases/objects.csv",
+  "thresholds": {
+    "low_contrast": 0.061419999599456786,
+    "long_spine": 285.2300061012462,
+    "branched_reference": 10,
+    "branch_minimum_area": 1228.0,
+    "limb": 0.85
+  },
+  "categories": {
+    "low_contrast": {
+      "annotation_objects": 820,
+      "frames": 328,
+      "annotation_groups": 17,
+      "detected_share": 0.3195121951219512,
+      "mean_best_iou": 0.2879839983660864,
+      "group_ci90": {
+        "detected_share": [
+          0.27569405076207903,
+          0.3586669420155538
+        ],
+        "mean_best_iou": [
+          0.24800846016719738,
+          0.32102558883613547
+        ]
+      },
+      "empty_group_bootstrap_draws": 0
+    },
+    "long_spine": {
+      "annotation_objects": 820,
+      "frames": 356,
+      "annotation_groups": 18,
+      "detected_share": 0.6329268292682927,
+      "mean_best_iou": 0.5317334773246108,
+      "group_ci90": {
+        "detected_share": [
+          0.5919389818255753,
+          0.6794675134936999
+        ],
+        "mean_best_iou": [
+          0.5106352131508441,
+          0.5557251385156966
+        ]
+      },
+      "empty_group_bootstrap_draws": 0
+    },
+    "branched_reference": {
+      "annotation_objects": 477,
+      "frames": 295,
+      "annotation_groups": 18,
+      "detected_share": 0.6813417190775681,
+      "mean_best_iou": 0.557695599097126,
+      "group_ci90": {
+        "detected_share": [
+          0.6441712193811293,
+          0.7295613528430239
+        ],
+        "mean_best_iou": [
+          0.5366136644444971,
+          0.587290779362841
+        ]
+      },
+      "empty_group_bootstrap_draws": 0
+    },
+    "limb": {
+      "annotation_objects": 455,
+      "frames": 255,
+      "annotation_groups": 18,
+      "detected_share": 0.35384615384615387,
+      "mean_best_iou": 0.272729558636854,
+      "group_ci90": {
+        "detected_share": [
+          0.2538840175368673,
+          0.4708525405834823
+        ],
+        "mean_best_iou": [
+          0.19727207835421234,
+          0.3596949326270003
+        ]
+      },
+      "empty_group_bootstrap_draws": 0
+    }
+  },
+  "examples": {
+    "low_contrast": {
+      "median": {
+        "stem": "20110327143554Bh",
+        "group": "0101",
+        "record_index": 1,
+        "filament_index": 0,
+        "area": 2966,
+        "spine_length": 259.8207812886058,
+        "contrast": 0.05608022212982178,
+        "branches": 7,
+        "rho": 0.8177596791867873,
+        "connected_pieces": 1,
+        "holes": 1,
+        "best_iou": 0.27804720401763916,
+        "detected": false
+      },
+      "failure": {
+        "stem": "20120213063134Lh",
+        "group": "0502",
+        "record_index": 0,
+        "filament_index": 10,
+        "area": 35251,
+        "spine_length": 745.6829485311798,
+        "contrast": 0.034157395362854004,
+        "branches": 0,
+        "rho": 0.847526714621574,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.0,
+        "detected": false
+      }
+    },
+    "long_spine": {
+      "median": {
+        "stem": "20130925143254Bh",
+        "group": "0104",
+        "record_index": 0,
+        "filament_index": 10,
+        "area": 7915,
+        "spine_length": 306.2548837604431,
+        "contrast": 0.07871657609939575,
+        "branches": 8,
+        "rho": 0.8193023745412078,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.5955257415771484,
+        "detected": true
+      },
+      "failure": {
+        "stem": "20150614162514Mh",
+        "group": "0104",
+        "record_index": 2,
+        "filament_index": 9,
+        "area": 32790,
+        "spine_length": 582.7411573339931,
+        "contrast": 0.03274792432785034,
+        "branches": 0,
+        "rho": 0.8488198756294962,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.0,
+        "detected": false
+      }
+    },
+    "branched_reference": {
+      "median": {
+        "stem": "20150615133554Bh",
+        "group": "0301",
+        "record_index": 0,
+        "filament_index": 3,
+        "area": 14024,
+        "spine_length": 788.323606909544,
+        "contrast": 0.12480026483535767,
+        "branches": 16,
+        "rho": 0.35128716083775297,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.6345357894897461,
+        "detected": true
+      },
+      "failure": {
+        "stem": "20120427063154Uh",
+        "group": "0101",
+        "record_index": 1,
+        "filament_index": 1,
+        "area": 15495,
+        "spine_length": 681.7244251265793,
+        "contrast": 0.03954493999481201,
+        "branches": 13,
+        "rho": 0.5116683428725632,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.0,
+        "detected": false
+      }
+    },
+    "limb": {
+      "median": {
+        "stem": "20130404063134Lh",
+        "group": "0402",
+        "record_index": 0,
+        "filament_index": 8,
+        "area": 17511,
+        "spine_length": 287.8768903091632,
+        "contrast": 0.05394399166107178,
+        "branches": 2,
+        "rho": 0.8705622240056733,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.0,
+        "detected": false
+      },
+      "failure": {
+        "stem": "20150706083014Th",
+        "group": "0204",
+        "record_index": 1,
+        "filament_index": 14,
+        "area": 12798,
+        "spine_length": 328.3789487565067,
+        "contrast": 0.05238157510757446,
+        "branches": 0,
+        "rho": 0.8890687490048879,
+        "connected_pieces": 1,
+        "holes": 0,
+        "best_iou": 0.0,
+        "detected": false
+      }
+    }
+  },
+  "example_rule": "closest to category median IoU and smallest IoU;area descending then stable identifiers;prefer frames unused by earlier examples;examples do not estimate prevalence",
+  "uncertainty": "Fixed thresholds/predictions;whole-annotation-group resampling;not training or physical uncertainty",
+  "physical_barb_labels_created": false,
+  "test_images_read": 0,
+  "new_fits": 0,
+  "new_forecasts": 0,
+  "seconds": 12.629880958003923
+}

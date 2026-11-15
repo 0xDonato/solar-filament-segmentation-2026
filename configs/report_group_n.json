@@ -1,0 +1,14 @@
+{
+  "name": "report_group_n",
+  "spine_w": 0.0,
+  "coords": false,
+  "encoder": "tu-tf_efficientnetv2_s",
+  "scale": 1,
+  "crop": 1024,
+  "batch": 8,
+  "steps": 12000,
+  "lr": 0.0005,
+  "prefetch_threads": 3,
+  "ckpt_every": 1000,
+  "scheme": "group"
+}
